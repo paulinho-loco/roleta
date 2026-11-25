@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roleta do Conhecimento</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎡 Roleta do Conhecimento</h1>
+    <p>Gire a roleta, responda às perguntas e acumule pontos!</p>
+</header>
+
+<div class="container">
+
+    <div class="pontuacao">
+
+        <div class="ponto">
+            ⭐ Pontos
+            <span id="pontos">0</span>
+        </div>
+
+        <div class="ponto">
+            ❓ Perguntas
+            <span id="respondidas">0/12</span>
+        </div>
+
+        <div class="ponto">
+            🏆 Recorde
+            <span id="recorde">0</span>
+        </div>
+
+    </div>
+
+    <h2>Gire a roleta!</h2>
+
+    <div class="roleta-area">
+
+        <div class="seta">▼</div>
+
+        <div class="roleta" id="roleta">
+
+            <div class="setor"><span>Matemática</span></div>
+            <div class="setor"><span>Ciências</span></div>
+            <div class="setor"><span>História</span></div>
+            <div class="setor"><span>Geografia</span></div>
+            <div class="setor"><span>Português</span></div>
+            <div class="setor"><span>Conhecimentos</span></div>
+
+        </div>
+
+    </div>
+
+    <button id="girar" onclick="girarRoleta()">
+        🎯 GIRAR ROLETA
+    </button>
+
+    <div class="pergunta-box" id="perguntaBox">
+
+        <p id="categoria"></p>
+
+        <h2 id="pergunta"></h2>
+
+        <div class="opcoes" id="opcoes"></div>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <div id="fim" style="display:none; margin-top:25px;">
+
+        <h2>🏆 Fim de jogo!</h2>
+
+        <p id="mensagemFinal"></p>
+
+        <button onclick="reiniciar()">
+            🔄 Jogar novamente
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Roleta do Conhecimento © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
